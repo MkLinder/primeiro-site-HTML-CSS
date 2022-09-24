@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
 :root {  /* Paleta de cores */
-    --cor1: rgba(38, 137, 218, 0.842);
-    --cor2: rgba(95, 8, 235, 0.562);
+    --cor1: rgba(118, 48, 184, 0.726);
+    --cor2: rgba(92, 37, 143, 0.726);
     --cor3: rgb(208, 215, 216);
+    --cor4: rgba(233, 233, 32, 0.877);
 
     --txtshad: rgba(51, 51, 51, 0.438);
     --boxshad: rgba(43, 5, 105, 0.493);
@@ -11,7 +12,7 @@
 
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -21,11 +22,12 @@ body, html {
 }
 
 header {
-    background-color: var(--cor2);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
 }
 
 header > h1 {
-    color: var(--cor3);
+    color: var(--cor4);
+    font-size: 2.5em;
     padding: 20px;   
 }
 
@@ -67,8 +69,7 @@ menu > ul > li > a {
 
 
 h2 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--cor2);
+    color: var(--cor3);
     text-shadow: 0px 0px 1px var(--txtshad);
     text-align: center;
     padding: 10px;
@@ -90,5 +91,5 @@ footer {
     color: var(--cor3);
     text-align: center;
     padding: 10px;
-    box-shadow: 0px -1px 5px var(--boxshad);
+    box-shadow: 0px -1px 3px var(--boxshad);
 }

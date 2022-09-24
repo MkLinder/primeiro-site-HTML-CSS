@@ -1,8 +1,20 @@
 @charset "UTF-8";
 
+:root {  /* Paleta de cores */
+    --cor1: rgba(118, 48, 184, 0.726);
+    --cor2: rgba(92, 37, 143, 0.726);
+    --cor3: rgb(208, 215, 216);
+    --cor4: rgba(233, 233, 32, 0.877);
 
-/*  AINDA NÃO FUNCIONOU NENHUMA CONFIGURAÇÃO !! */
-@media screen and(min-width: 768px) {
+    --txtshad: rgba(51, 51, 51, 0.438);
+    --boxshad: rgba(43, 5, 105, 0.493);
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        box-shadow: 2px 0px 5px var(--boxshad);
+    }
     span#burguer {
         display: none
     }
@@ -12,7 +24,25 @@
     }
 
     menu > ul > li {
+        background-color: var(--cor4);
         display: inline-block;
+        padding: 5px 40px 5px 40px;
+        margin: 10px 3px;
+        border-radius: 10px 5px ;
+        box-shadow: 0px 2px 4px var(--boxshad);
+    }
+
+    menu > ul > li > a {
+        color: var(--cor1);
+        font-weight: bolder;
+        text-shadow: 0px 0px 1px var(--txtshad);
+        
+    }
+
+    menu > ul > li:hover {
+        background-color: rgb(245, 245, 57);
+        box-shadow: 0px 5px 10px var(--boxshad);
+        transition: .5s;
     }
 
 }
