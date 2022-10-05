@@ -45,4 +45,15 @@
         transition: .5s;
     }
 
+    article {
+        width: 300px;
+        position: relative;
+        transform: translate(50%, 10%);
+    }
+    
+    main > span > video {
+        height: 400px;
+    }
+
 }
+
