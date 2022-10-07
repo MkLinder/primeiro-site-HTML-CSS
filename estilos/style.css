@@ -14,13 +14,24 @@
 
     header {
         box-shadow: 2px 0px 5px var(--boxshad);
+        height: 70vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #back {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;       
     }
     span#burguer {
         display: none
     }
 
-    menu {
+    menu#items {
         display: block;
+        position: absolute;
+        transform: translate(35%, 650%);
     }
 
     menu > ul > li {
@@ -46,13 +57,8 @@
     }
 
     article {
-        width: 300px;
-        position: relative;
-        transform: translate(50%, 10%);
-    }
-    
-    main > span > video {
-        height: 400px;
+        padding: 10px 200px;
+        text-align: center;
     }
 
 }

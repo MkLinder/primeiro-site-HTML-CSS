@@ -26,6 +26,18 @@ header {
     overflow: hidden;  /* Para não ter scrool, barra lateral. */
 }
 
+#content {
+    position: absolute;
+    top: 20px;
+    padding: 5px 20px;
+}
+
+header > div#content > h1 {
+    color: var(--cor4);
+    font-size: 2.5em;
+      
+}
+
 #back {
     right: 0;
     bottom: 0;
@@ -33,20 +45,8 @@ header {
     min-height: 100%;
     width: auto;
     height: auto;
-    background-repeat: cover;
-}
-
-#content {
-    position: absolute;
-    top: 20px;
-    padding: 5px 20px;
-}
-
-
-header > div#content > h1 {
-    color: var(--cor4);
-    font-size: 2.5em;
-      
+    background-size: cover;
+    margin-bottom: -4px;
 }
 
 span#burguer {
