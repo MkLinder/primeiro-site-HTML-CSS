@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 :root {  /* Paleta de cores */
-    --cor1: rgba(118, 48, 184, 0.726);
+    --cor1: #2a0538e5;
     --cor2: rgba(92, 37, 143, 0.726);
     --cor3: rgb(208, 215, 216);
     --cor4: rgba(233, 233, 32, 0.911);
+    --cor5: #2541d3;
 
     --txtshad: rgba(51, 51, 51, 0.438);
     --boxshad: rgba(43, 5, 105, 0.493);
@@ -18,26 +19,33 @@
         padding: 0px;
         box-sizing: border-box;
     }
+
+    body, html {
+        background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+    }
     header {
-        box-shadow: 2px 0px 5px var(--boxshad);
-        height: 70vh;
+        box-shadow: 3px 0px 10px rgba(38, 15, 59, 0.726);
+        height: 400px;
         overflow: hidden;
     }
     
     #back {
-        height: 400px;
+        height: 100%;
+        width: 100%;
         background-repeat: no-repeat;
         background-size: cover; 
         background-origin: border-box;
         background-clip: border-box;
-            
+        
+        
     }
 
     h1 {
-        margin: 20px;
         color: var(--cor4);
-        font-size: 2.5em;
+        font-size: 3em;
         position: absolute;
+        top: 10%;
+        left: 5%;
         text-shadow: 2px 2px 8px black;
     }
     span#burguer {
@@ -45,15 +53,16 @@
     }
 
     #items {
-        display: inline; 
         position: absolute;
-        transform: translate(30%, -100%);
-       
+        top: 25%;
+        left: 7%;
+        right: auto;
     }
+    
 
     menu > ul > li {
         background-color: var(--cor4);
-        display: inline-block;
+        
         padding: 5px 40px 5px 40px;
         margin: 10px 10px;
         border-radius: 10px 5px ;
@@ -70,18 +79,17 @@
     menu > ul > li:hover {
         background-color: rgb(245, 245, 57);
         box-shadow: 0px 5px 10px var(--boxshad);
-        transition: .5s;
+        transition: .3s;
     }
 
     main {
         width: 700px;
-        background-color: rgba(255, 255, 255, 0.404);
         border-radius: 10px;
         margin: auto;
     }
 
     article {
-        
+        color: white;
         text-align: center;
     }
 
